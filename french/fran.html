@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=PT+Serif&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fran.css">
+    <script src="https://kit.fontawesome.com/1da44d6aef.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-top-right.css' rel='stylesheet'>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="app2">
+        <nav>
+            <ul class="side" :style="{display : modal}">
+                <li><h1>Kov.</h1></li>
+                <li><a href="D:\MasterCAWEB\Portfolio\CV-Job.pdf">CV</a></li>
+                <li><a href="D:\MasterCAWEB\Portfolio\french\coord\coor.html">Contact</a></li>
+                <li><a href="D:\MasterCAWEB\Portfolio\index.html">EN</a></li>
+                <span @click="fermer">&times;</span>
+            </ul>
+            <ul class="side2">
+                <li><h1>Kov.</h1></li>
+                <li class="CV"><a href="D:\MasterCAWEB\Portfolio\CV-Job.pdf">CV</a></li>
+                <li class="contact"><a href="D:\MasterCAWEB\Portfolio\french\coord\coor.html">Contact</a></li>
+                <li class="French"><a href="D:\MasterCAWEB\Portfolio\index.html">EN</a></li>
+                <button @click="ouvre">|||||</button>
+            </ul>
+        </nav>
+    </div>
+      
+   <div class="section1">
+        <div class="presentation">
+            <h3>Kovan BACHAR</h3>
+            <h1>Développeur Web & Créateur de Contenu</h1>
+            <q>
+                Avec passion, créativité et connaissance à la fois en développement Front-End et Back-End, 
+                je ferai de votre site web de rêve une réalité.
+            </q>
+            <a href="D:\MasterCAWEB\Portfolio\CV-Job.pdf">CV</a>
+            <a href="https://www.linkedin.com/in/kovan-bachar-7b767a204/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="pres">
+            <img src="gg-removebg-preview.png">
+        </div>
+        
+   </div>
+
+   <div id="app">
+    <h2>Langages de Programmation</h2>
+        <div class="slides">
+            <img v-for="(image, index) in images" :src="image" :key="index" :class="{active : index === thisIndex}">
+        </div>
+        <div class="control">
+            <button @click="nextImg">Suivant</button>
+            <button @click="prevImg">précédent</button>
+        </div>
+   </div>
+    
+    <div class="section2">
+        <div class="sc2">
+            <h2>Qui suis-je?</h2>
+            <div class="shad"></div>
+            <p>I am a final-year <b>Web Development</b> master's student
+            and<b> Content Creator</b>. Passionate about Web technlogies
+            and Content creation, i have completed a lot of projects in both feilds,
+            using <b>HTML, CSS, JavaScript, Vue JS & figma</b> which have helped me acquire essential skills 
+            to be able to bring you innovative solutions. 
+            Very curios and dedicated, I am eager to join your team.  </p>
+            <a href="D:\MasterCAWEB\Portfolio\french\coord\coor.html">Parlons</a>
+        </div>
+        <div>
+            <img src="ssss.png">
+            <div class="ssss"></div>
+        </div>
+    </div>
+
+    <div class="section3">
+       <div>
+        <div>
+            <h2>Atouts</h2>
+        </div>
+        <div class="shadow"></div>
+       </div>
+        
+       <div class="skk">
+        <div class="skill">
+            <i class="fab fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>HTML & CSS</h3>
+            <p>Je possède toutes les compétences nécessaire pour vous
+                réaliser le site que vous souhaitez.
+            </p>
+        </div>
+        
+        <div class="skill">
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-vuejs"></i>
+            <h3>JavaScript & Vue JS</h3>
+            <p>Avec mes compétences en JS et Vue Js, je vous créerai 
+                des site web dynamics
+            </p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-highlighter"></i>
+            <h3>Web Design</h3>
+            <p>Avec Figma et Adobe, je vous réaliserai le design dont vous revez </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="section4">
+        <div>
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div class="scshadow"></div>
+        </div>
+        
+        <div class="proj">
+            <div class="item item1">
+                <img src="project1.jpg">
+                <h3>Site Hotel</h3>
+                <p>Pendant mon stage de fin d'études, j'ai réalise un site web type
+                    hôtellerie pour l'entreprise Astan Informatique
+                </p>
+            </div>
+            <div class="item item2">
+                <img src="project2.webp">
+                <h3>Projets universitaire</h3>
+                <p>J'ai réalisé plusieurs site web pendant mes étdues sous HTML/CSS et JS/Vue Js</p>
+            </div>
+            <div class="item item3">
+                <img src="project3.png">
+                <h3>copier coller</h3>
+                <p>Pendant mes études, j'ai reproduit plusieus sites web avec mon propre code
+                </p>
+            </div>
+    </div>
+    </div>
+      
+    <footer>
+        <p>&copy; 2024 Kovan BACHAR - CAWEB</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1420 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.side {
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.side a {
+    color: white;
+    position: relative; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    
+}
+
+.side a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -3px;
+    left: 0; 
+    background-color: white;
+    transition: width 0.4s ease; 
+}
+
+.side a:hover::after {
+    width: 60%; /
+    
+}
+.side li {
+    margin-top: 50px;
+}
+
+.side h1 {
+    font-size: 35px;
+    color: white;
+}
+.side span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 35px;
+}
+.side2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+}
+   .side2 h1 {
+    color: white;
+    font-size: 30px;
+   }
+
+   .side2 a {
+    color: white;
+    position: relative; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    
+}
+
+.side2 a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -3px;
+    left: 0; 
+    background-color: white;
+    transition: width 0.4s ease; 
+}
+
+.side2 a:hover::after {
+    width: 60%; /
+    
+}
+   .side2 button {
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+    color: white;
+    padding: 5px;
+    width: 75px;
+    border: 1px solid white;
+
+   }
+   .CV {
+    display: none;
+   }
+   .contact {
+    display: none;
+   }
+   .French {
+    display: none;
+   }
+
+.section1 {
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.section1 .presentation {
+    text-align: center;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 30px; /* Add space between presentation and links */
+}
+
+.section1 .presentation h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.section1 .presentation h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.section1 .presentation q {
+    font-style: italic;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px 0; /* Add space around the quote */
+}
+
+
+.section1 .presentation a {
+    color: white;
+    gap: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    font-weight: 600;
+}
+
+.section1 .presentation a:hover {
+    background-color: white;
+    color: black;
+}
+.section1 .pres {
+    position: relative;
+    z-index: 3;
+}
+
+.section1 .pres img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    background: transparent;
+}
+
+
+#app{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
+
+
+}
+#app h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightcyan;
+}
+.slides {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides img{
+    position: absolute;
+    height: 300px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+.slides img.active{
+    opacity: 1;
+}
+#app .control  {
+    display: flex;
+    justify-content: space-around;
+}
+.control button {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    font-size: 15px;
+    text-align: center;
+}
+.control button:hover{
+    background-color: lightgrey;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.section2 .sc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2 img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+.section2 .ssss {
+    position: absolute;
+    background-color: lightcyan;
+    top: 63%;
+    left: 29%;
+    transform: translateX(-29%);
+    border: 3px solid black;
+    height: 300px;
+    width: 200px;
+    z-index: 1;
+}
+
+.section2 h2 {
+    background-color: lightcyan;
+    margin: 15px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+.section2 .shad{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.212);
+    top: 30px;
+    left: 40%;
+    transform: translateX(-40%);
+    border-bottom: 3px solid black;
+    z-index: 1;
+    opacity: 0.3;
+    
+}
+
+.section2 p {
+    margin: 15px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.section2 a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .section2 a:hover{
+     background-color: lightgrey;
+     color: black;
+     transition: color 0.3s ease-in-out;
+ }
+ .section2 a::after{
+     height: 45px;
+ }
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 30px 0;
+    gap: 10px;
+    position: relative;
+    padding: 30px;
+}
+.section3 h2{
+    background-color: lightcyan;
+    margin-top: 25px;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+    
+}
+.section3 .shadow{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.212);
+    top: 40px;
+    left: 40%;
+    transform: translateX(-40%);
+    border-bottom: 3px solid black;
+    z-index: 1;
+    opacity: 0.3;
+}
+.section3 h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    
+}
+.section3 i {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.section3 .skk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+   
+}
+.section3 .skill {
+    border: 3px solid black;
+    width: 65%;
+    margin-top: 20px;
+    padding: 3rem 1rem 2rem;
+    height: 230px;
+}
+
+
+.section3 .skill:hover {
+    border: 3px solid blue;
+    width: 70%;
+    i {
+        color: blue;
+    }
+    transition: all 0.7s ease;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: aliceblue;
+    gap: 20px;
+    position: relative;
+}
+.section4 .proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section4 h2{
+    margin: 40px;
+    background-color: lightcyan;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.section4 .scshadow {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.212);
+    top: 25px;
+    left: 40%;
+    transform: translateX(-40%);
+    border-bottom: 3px solid black;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+
+.section4 .item{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 350px;
+    margin: 20px 0;
+    gap: 15px;
+}
+.section4 .item img {
+    width: 100%;
+    object-fit: cover;
+}
+.item p {
+    padding: 5px;
+}
+.item h3 {
+    padding: 5px;
+}
+.section4 .item:hover{
+    background-color: white;
+    border: 3px solid rgba(0, 0, 0, 0.212);
+    transition: all 0.2s ease;
+}
+footer {
+    background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8)); 
+    text-align: center;       
+    padding: 20px;            
+    font-size: 15px;          
+    color: white;              
+}
+
+footer p {
+    margin: 0;                
+    line-height: 1.5;        
+}
+
+/* Additions for large screens */
+/*more @media screen*/
+@media screen and (min-width: 410px) {
+    .section2 .ssss {
+        top: 60%;
+        left: 35%;
+        transform: translateX(-35%);
+        
+    }
+    .section4 .item {
+        margin: 20px;
+        height: 370px;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    .section2 .ssss {
+        top: 60%;
+        left: 35%;
+        transform: translateX(-35%);
+    }
+    .section4 .item {
+        margin: 20px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    .section2 .ssss {
+        top: 54%;
+        left: 35%;
+        transform: translateX(-35%);
+    }
+    .section4 .item {
+        margin: 20px;
+        height: 420px;
+    }
+}   
+@media screen and (min-width: 650px) {
+    .section2 .ssss {
+        top: 53%;
+        left: 35%;
+        transform: translateX(-35%);
+    }
+    .section4 .item {
+        margin: 20px;
+        height: 450px;
+    }
+    footer {      
+        font-size: 17px;                     
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .side {
+        display: none;
+       }
+       .side2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+    }
+       .side2 li {
+       margin: 0 50px;
+       }
+       .side2 h1 {
+        color: white;
+        font-size: 40px;
+       }
+       .side2 a {
+        color: white;
+        font-size: 20px;
+       }
+       .side2 button {
+        display: none;
+       }
+       .CV {
+        display: flex;
+       }
+       .contact {
+        display: flex;
+       }
+      .French {
+        display: flex;
+      }
+        .section1 {
+            flex-direction: row;
+        }
+        .section1 .presentation {
+            margin: 10px;
+            padding: 10px;
+        }
+        .section1 .pres {
+            margin: 10px;
+            padding: 10px;
+        }
+        .section1  img {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+          
+        }
+    
+        .section1 .presentation {
+            
+            text-align: left;
+        }
+        .section1 .presentation h1 {
+            font-size: 35px;
+        }
+    
+        .section1 .presentation q {
+            font-size: 17px;
+        }
+    
+        #app {
+            padding: 20px;
+            margin-top: 20px;
+            width: 50%;
+        }
+        #app button {
+            width: 150px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    
+        #app h2 {
+            font-size: 35px;
+        }
+        /* Adjustments for section2 */
+        .section2 {
+            flex-direction: row;   
+        }
+        .section2 .sc2 {
+            margin: 20px;
+            padding: 10px;
+        }
+        .section2 h2 {
+            font-size: 30px;
+        }
+        .section2 img {
+            width: 40vw;
+            height: 60vh;
+        }
+        .section2 .shad {
+            top: 7%;
+            left: 25%;
+            width: 170px;
+            height: 50px;
+        }
+        .section2 p {
+            font-size: 20px;
+            padding: 20px;
+            margin-top: 30px;
+            line-height: 1.8em;
+        }
+        .section2 .sc2 a {
+            width: 200px;
+        }
+        .section2 .ssss {
+            top: 20%;
+            left: 85%;
+            transform: translate(-80%);
+            width: 40vw;
+            height: 60vh;
+        }
+    
+        /* Adjustments for section3 */
+        .section3 {
+            
+            
+        }
+        .section3 h2 {
+            font-size: 35px;
+        }
+        .section3 .shadow {
+            left: 45%;
+            width: 120px ;
+            height: 60px;
+        }
+        .section3 .skk {
+            flex-direction: row;
+        }
+        .section3 .skk p {
+            font-size: 17px;
+            margin-top: 5px;
+        }
+        .section3 .skk i {
+            font-size: 50px;
+            margin: 0px;
+        }
+        .section3 .skk h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight:600;
+        }
+    
+        .section3 .skill {
+            width: 33%;
+            height: 260px;
+            margin: 20px;
+        }
+        .section3 .skill:hover{
+            cursor: pointer;
+            width: 35%;
+        }
+    
+        /* Adjustments for section4 */
+       
+        .section4 h2 {
+            font-size: 35px;
+        }
+        .section4 .scshadow {
+            left: 45%;
+            width: 160px ;
+            height: 60px;
+        }
+        .section4 .proj {
+            flex-direction: row;
+        }
+        .section4 .proj p {
+            font-size: 17px;
+        }
+        .section4 .item {
+            width: 33%;
+            margin: 20px;
+            height: 370px;
+        }
+        .section4 .item:hover{
+            cursor: pointer;
+        }
+        footer {      
+            font-size: 19px;                     
+        }
+    }
+    
+
+@media screen and (min-width: 950px) {
+        .side {
+            display: none;
+           }
+           .side2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+        }
+           .side2 li {
+           margin: 0 50px;
+           }
+           .side2 h1 {
+            color: white;
+            font-size: 40px;
+           }
+           .side2 a {
+            color: white;
+            font-size: 20px;
+           }
+           .side2 button {
+            display: none;
+           }
+           .CV {
+            display: flex;
+           }
+           .contact {
+            display: flex;
+           }
+          
+            .section1 {
+                flex-direction: row;
+            }
+            .section1 .presentation {
+                margin: 30px;
+                padding: 10px;
+                text-align: left;
+            }
+            .section1 .pres {
+                margin: 10px;
+                padding: 10px;
+            }
+            .section1  img {
+                height: 100vh;
+                width: 100vw;
+                object-fit: cover;
+              
+            }
+        
+            .section1 .presentation h1 {
+                font-size: 37px;
+            }
+        
+            .section1 .presentation q {
+                font-size: 20px;
+            }
+            .section1 .presentation h3 {
+                font-size: 24px;
+            }
+        
+            #app {
+                padding: 20px;
+                margin-top: 20px;
+                width: 50%;
+            }
+            #app button {
+                width: 200px;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        
+            #app h2 {
+                font-size: 35px;
+            }
+            /* Adjustments for section2 */
+            .section2 {
+                flex-direction: row;   
+            }
+            .section2 .sc2 {
+                margin: 20px;
+                padding: 10px;
+            }
+            .section2 h2 {
+                font-size: 30px;
+            }
+            .section2 img {
+                width: 40vw;
+                height: 60vh;
+            }
+            .section2 .shad {
+                top: 7%;
+                left: 25%;
+                width: 170px;
+                height: 50px;
+            }
+            .section2 p {
+                font-size: 20px;
+                padding: 20px;
+                margin-top: 30px;
+                line-height: 1.8em;
+            }
+            .section2 .sc2 a {
+                width: 200px;
+            }
+            .section2 .ssss {
+                top: 17%;
+                left: 87%;
+                transform: translateX(-87%);
+                width: 40vw;
+                height: 60vh;
+            }
+        
+            /* Adjustments for section3 */
+            .section3 {
+                
+                
+            }
+            .section3 h2 {
+                font-size: 35px;
+            }
+            .section3 .shadow {
+                left: 45%;
+                width: 120px ;
+                height: 60px;
+            }
+            .section3 .skk {
+                flex-direction: row;
+            }
+            .section3 .skk p {
+                font-size: 17px;
+                margin-top: 5px;
+            }
+            .section3 .skk i {
+                font-size: 50px;
+                margin: 0px;
+            }
+            .section3 .skk h3 {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:600;
+            }
+        
+            .section3 .skill {
+                width: 33%;
+                height: 230px;
+                margin: 20px;
+            }
+            .section3 .skill:hover{
+                cursor: pointer;
+                width: 35%;
+            }
+        
+            /* Adjustments for section4 */
+            .section4 h2 {
+                font-size: 35px;
+            }
+            .section4 .scshadow {
+                left: 45%;
+                width: 160px ;
+                height: 60px;
+            }
+            .section4 .proj {
+                flex-direction: row;
+            }
+            .section4 .proj p {
+                font-size: 17px;
+            }
+            .section4 .item {
+                width: 33%;
+                margin: 20px;
+                height: 370px;
+            }
+            .section4 .item:hover{
+                cursor: pointer;
+            }
+            footer {      
+                font-size: 20px;                     
+            }
+        }
+        
+@media screen and (min-width: 1060px) {
+            .side {
+                display: none;
+               }
+               .side2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+            }
+               .side2 li {
+               margin: 0 50px;
+               }
+               .side2 h1 {
+                color: white;
+                font-size: 40px;
+               }
+               .side2 a {
+                color: white;
+                font-size: 20px;
+               }
+               .side2 button {
+                display: none;
+               }
+               .CV {
+                display: flex;
+               }
+               .contact {
+                display: flex;
+               }
+              
+                .section1 {
+                    flex-direction: row;
+                }
+                .section1 .presentation {
+                    margin: 30px;
+                    padding: 20px;
+                    text-align: left;
+                }
+                .section1 .pres {
+                    margin: 10px;
+                    padding: 10px;
+                }
+                .section1  img {
+                    height: 100vh;
+                    width: 100vw;
+                    object-fit: cover;
+                  
+                }
+            
+                .section1 .presentation h1 {
+                    font-size: 40px;
+                }
+            
+                .section1 .presentation q {
+                    font-size: 22px;
+                }
+                .section1 .presentation h3 {
+                    font-size: 25px;
+                }
+            
+                #app {
+                    padding: 20px;
+                    margin-top: 20px;
+                    width: 50%;
+                }
+                #app button {
+                    width: 200px;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            
+                #app h2 {
+                    font-size: 35px;
+                }
+                /* Adjustments for section2 */
+                .section2 {
+                    flex-direction: row;   
+                }
+                .section2 .sc2 {
+                    margin: 20px;
+                    padding: 10px;
+                }
+                .section2 h2 {
+                    font-size: 30px;
+                }
+                .section2 img {
+                    width: 35vw;
+                    height: 60vh;
+                }
+                .section2 .shad {
+                    top: 10%;
+                    left: 28%;
+                    width: 170px;
+                    height: 50px;
+                }
+                .section2 p {
+                    font-size: 20px;
+                    padding: 20px;
+                    margin: 20px;
+                    line-height: 1.8em;
+                }
+                .section2 .sc2 a {
+                    width: 200px;
+                }
+                .section2 .ssss {
+                    top: 10%;
+                    left: 90%;
+                    transform: translateX(-90%);
+                    width: 35vw;
+                    height: 60vh;
+                }
+            
+                /* Adjustments for section3 */
+                .section3 {
+                    
+                    
+                }
+                .section3 h2 {
+                    font-size: 35px;
+                }
+                .section3 .shadow {
+                    left: 47%;
+                    width: 120px ;
+                    height: 60px;
+                }
+                .section3 .skk {
+                    flex-direction: row;
+                }
+                .section3 .skk p {
+                    font-size: 17px;
+                    margin-top: 5px;
+                }
+                .section3 .skk i {
+                    font-size: 50px;
+                    margin: 0px;
+                }
+                .section3 .skk h3 {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    font-weight:600;
+                }
+            
+                .section3 .skill {
+                    width: 33%;
+                    height: 230px;
+                    margin: 20px;
+                }
+                .section3 .skill:hover{
+                    cursor: pointer;
+                    width: 35%;
+                }
+            
+                /* Adjustments for section4 */
+               
+                .section4 h2 {
+                    font-size: 35px;
+                }
+                .section4 .scshadow {
+                    left: 45%;
+                    width: 160px ;
+                    height: 60px;
+                }
+                .section4 .proj {
+                    flex-direction: row;
+                }
+                .section4 .proj p {
+                    font-size: 17px;
+                }
+                .section4 .item {
+                    width: 33%;
+                    margin: 20px;
+                    height: 400px;
+                }
+                .section4 .item:hover{
+                    cursor: pointer;
+                }
+            }
+@media screen and (min-width: 1200px) {
+        .side {
+            display: none;
+            }
+            .side2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+        }
+            .side2 li {
+            margin: 0 50px;
+            }
+            .side2 h1 {
+            color: white;
+            font-size: 40px;
+            }
+            .side2 a {
+            color: white;
+            font-size: 20px;
+            }
+            .side2 button {
+            display: none;
+            }
+            .CV {
+            display: flex;
+            }
+            .contact {
+            display: flex;
+            }
+            
+            .section1 {
+                flex-direction: row;
+            }
+            .section1 .presentation {
+                margin: 30px;
+                padding: 20px;
+                text-align: left;
+            }
+            .section1 .pres {
+                margin: 10px;
+                padding: 10px;
+            }
+            .section1  img {
+                height: 55vh;
+                width: 50vw;
+                object-fit: cover;
+                
+            }
+        
+            .section1 .presentation h1 {
+                font-size: 43px;
+            }
+        
+            .section1 .presentation q {
+                font-size: 23px;
+            }
+            .section1 .presentation h3 {
+                font-size: 27px;
+            }
+            #app {
+                padding: 20px;
+                margin-top: 20px;
+                width: 50%;
+            }
+            #app button {
+                width: 200px;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        
+            #app h2 {
+                font-size: 35px;
+            }
+            /* Adjustments for section2 */
+            .section2 {
+                flex-direction: row;   
+            }
+            .section2 .sc2 {
+                margin: 20px;
+                padding: 10px;
+            }
+            .section2 h2 {
+                font-size: 30px;
+            }
+            .section2 img {
+                width: 30vw;
+                height: 70vh;
+            }
+            .section2 .shad {
+                top: 23%;
+                left: 33%;
+                width: 170px;
+                height: 50px;
+            }
+            .section2 p {
+                font-size: 20px;
+                padding: 30px;
+                margin: 20px;
+                line-height: 1.8em;
+            }
+            .section2 .sc2 a {
+                width: 200px;
+            }
+            .section2 .ssss {
+                top: 5%;
+                left: 92%;
+                transform: translateX(-92%);
+                width: 30vw;
+                height: 70vh;
+            }
+        
+            /* Adjustments for section3 */
+            .section3 {
+                
+                
+            }
+            .section3 h2 {
+                font-size: 35px;
+            }
+            .section3 .shadow {
+                left: 48%;
+                width: 120px ;
+                height: 60px;
+            }
+            .section3 .skk {
+                flex-direction: row;
+            }
+            .section3 .skk p {
+                font-size: 17px;
+                margin-top: 5px;
+            }
+            .section3 .skk i {
+                font-size: 50px;
+                margin: 0px;
+            }
+            .section3 .skk h3 {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:600;
+            }
+        
+            .section3 .skill {
+                width: 33%;
+                height: 230px;
+                margin: 20px;
+            }
+            .section3 .skill:hover{
+                cursor: pointer;
+                width: 35%;
+            }
+        
+            /* Adjustments for section4 */
+            .section4 h2 {
+                font-size: 35px;
+            }
+            .section4 .scshadow {
+                left: 47%;
+                width: 160px ;
+                height: 60px;
+            }
+            .section4 .proj {
+                flex-direction: row;
+            }
+            .section4 .proj p {
+                font-size: 17px;
+            }
+            .section4 .item {
+                width: 33%;
+                margin: 20px;
+                height: 420px;
+            }
+            .section4 .item:hover{
+                cursor: pointer;
+            }
+            footer {      
+                font-size: 22px;                     
+            }
+        }
+                
+@media screen and (min-width: 1440px) {
+            .side {
+                display: none;
+                }
+                .side2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to right, rgb(75, 74, 74), rgb(8, 8, 8));
+            }
+                .side2 li {
+                margin: 0 50px;
+                }
+                .side2 h1 {
+                color: white;
+                font-size: 40px;
+                }
+                .side2 a {
+                color: white;
+                font-size: 20px;
+                }
+                .side2 button {
+                display: none;
+                }
+                .CV {
+                display: flex;
+                }
+                .contact {
+                display: flex;
+                }
+                
+                .section1 {
+                    flex-direction: row;
+                }
+                .section1 .presentation {
+                    text-align: left;
+                    margin: 40px;
+                    padding: 20px;
+                }
+                .section1 .pres {
+                    margin: 10px;
+                    padding: 10px;
+                }
+                .section1  img {
+                    height: 55vh;
+                    width: 50vw;
+                    object-fit: cover;
+                    
+                }
+            
+                
+                .section1 .presentation h1 {
+                    font-size: 46px;
+                }
+            
+                .section1 .presentation q {
+                    font-size: 25px;
+                }
+                .section1 .presentation h3 {
+                    font-size: 29px;
+                }
+            
+                #app {
+                    padding: 20px;
+                    margin-top: 20px;
+                    width: 50%;
+                }
+                #app button {
+                    width: 200px;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            
+                #app h2 {
+                    font-size: 35px;
+                }
+                /* Adjustments for section2 */
+                .section2 {
+                    flex-direction: row;   
+                }
+                .section2 .sc2 {
+                    margin: 20px;
+                    padding: 10px;
+                }
+                .section2 h2 {
+                    font-size: 30px;
+                }
+                .section2 img {
+                    width: 30vw;
+                    height: 70vh;
+                }
+                .section2 .shad {
+                    top: 23%;
+                    left: 33%;
+                    width: 170px;
+                    height: 50px;
+                }
+                .section2 p {
+                    font-size: 20px;
+                    padding: 30px;
+                    margin: 20px;
+                    line-height: 1.8em;
+                }
+                .section2 .sc2 a {
+                    width: 200px;
+                }
+                .section2 .ssss {
+                    top: 5%;
+                    left: 92%;
+                    transform: translateX(-92%);
+                    width: 30vw;
+                    height: 70vh;
+                }
+            
+                /* Adjustments for section3 */
+                .section3 {
+                    
+                    
+                }
+                .section3 h2 {
+                    font-size: 35px;
+                }
+                .section3 .shadow {
+                    left: 48%;
+                    width: 120px ;
+                    height: 60px;
+                }
+                .section3 .skk {
+                    flex-direction: row;
+                }
+                .section3 .skk p {
+                    font-size: 17px;
+                    margin-top: 5px;
+                }
+                .section3 .skk i {
+                    font-size: 50px;
+                    margin: 0px;
+                }
+                .section3 .skk h3 {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    font-weight:600;
+                }
+            
+                .section3 .skill {
+                    width: 33%;
+                    height: 230px;
+                    margin: 20px;
+                }
+                .section3 .skill:hover{
+                    cursor: pointer;
+                    width: 35%;
+                }
+            
+                /* Adjustments for section4 */
+    
+                .section4 h2 {
+                    font-size: 35px;
+                }
+                .section4 .scshadow {
+                    left: 47%;
+                    width: 160px ;
+                    height: 60px;
+                }
+                .section4 .proj {
+                    flex-direction: row;
+                }
+                .section4 .proj p {
+                    font-size: 17px;
+                }
+                .section4 .item {
+                    width: 33%;
+                    margin: 20px;
+                    height: 500px;
+                }
+                .section4 .item:hover{
+                    cursor: pointer;
+                }
+            }
+
+
